@@ -11,8 +11,9 @@
 </head>
 <body>
     <!-- -->
-    <header>    
-        <div class="row">
+    <header>
+        <!--row1-->    
+        <div class="row no-gutters">
 
 <!--
 In our case, the profile photo will act as our logo because that's how our 
@@ -26,17 +27,38 @@ we can access our image and style our logo.
             <a class="col-md-4 logo" href="index.html">
             
             </a>
-            <div class="col-md-8"> <!--So that will split up our screen into one-third and two-thirds sections.-->
-                <!-- adding new bootstrap row inside it we need a colum row.-->
+<!--split up our screen into one-third and two-thirds sections.adding new bootstrap row inside it we need a colum row.-->
+            <div class="col-md-8"> 
 
-                <div class="row bg-color-name-title "> <!--bg-color-name-title->will be background-color. copied in style.css-->
+                <!--row2--> 
+                <div class="row no-gutters bg-color-name-title "> <!--bg-color-name-title->will be background-color. copied in style.css-->
                     <div class="col heading">
                         <h1 class="name">Rosie Steven</h1>
-                        <h2 class="title">Full Stack Developer</h2>
-                    
+                        <h2 class="title">Full Stack Developer</h2>       
                     </div>
                 </div>
-              
+                
+                <!--row3 no-gutters-->                                  <!--NAVIGATION-->
+                <div class="row no-gutters"> <!--We need to add another row underneath our column, inside it will another column as child.-->
+                    <div class="col"> <!-- column child. un-ordered list.-->
+                        <ul id="nav" class="list-inline menucontainer"> <!-- new container class to close the gaps in the list.-->
+                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item">
+                                <a href="#"><span>Home</span></a>  
+                            </li>
+                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
+                                <a href="#"><span>Resume</span></a>
+                            </li>  
+                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
+                                <a href="#"><span>Contact</span></a>
+                             </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
+                                <a href="#"><span>Download</span></a> 
+                            </li> <!-- adter this sort out the backgound color of the this list.-->
+                        
+                        </ul>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </header>

@@ -6,8 +6,19 @@
 .bg-color-name-title {
     background-color: #676767;
 }
-
-/* -------------------------------------------header */
+.ui-menu-color-home {
+    background-color: #e67e22;
+}
+.ui-menu-color-resume {
+    background-color: #9b596b;
+}
+.ui-menu-color-contact {
+    background-color: #3498db;
+}
+.ui-menu-color-download {
+    background-color: #525252;
+}
+/* -------------------------------------------heading */
 
 header {
     margin: 0;
@@ -27,3 +38,65 @@ header {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
+/*
+The next thing that we can do, then, is start styling our name and our title.
+So we're going to use one of the fonts that we accessed from Google fonts in an
+ earlier video, which is the Exo font.It's an interesting font. It's not used 
+ all that often, but it does have a nice contrast with Roboto, which we'll be 
+ using as well.Roboto is becoming very popular for web content.We're setting 
+ the font family to Exo and then San serif as our fallback if Exo fails.
+The font weight is 100, and, as you can see, that matches the option that we 
+specified in our font import up at the top of our CSS file.
+*/
+
+
+.name {
+    font-family:"Exo", sans-serif;
+    font-weight:100; 
+    font-size:46px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.title {
+    font-family:"Roboto", sans-serif;
+    font-weight:200; 
+    font-size:28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #fff;
+}
+
+/*This over-writes the the gaps between the margins on the list items to be a little closer together.*/
+.list-inline-item:not(:last-child) { 
+    margin: 0;
+}
+
+/*
+The way to solve this is to create a container with the font-size of 0 so that the spaces are not displayed.
+So we're going to add the menucontainer class to our <ul>.
+*/
+.menucontainer {
+    font-size: 0; /* Then in our CSS, we'll target it here, and we'll give that a font-size of 0, which will
+                 close up the gaps between our items.*/
+}
+
+/*
+The problem is that means that all of our items will then have a font-size of 0, so we can no longer see them.
+
+We can override this by using our nav ID, targeting all the children lis and giving a font-size of 14px.
+We'll then also just set the padding to 0 as well because we want to have full control over that.
+Let's try that.*/
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+/* when we run it we relized their is a small gap called the gutter.
+
+We've got this opening gap here now that we need to close.
+The reason for this is that Bootstrap actually provides padding to all the columns by default.
+This is called a gutter so that there's a space before and after the columns.
+
+(To fix it, we can add the no-gutters class ) to all of our rows, and this will switch off the gutters for the columns.*/
