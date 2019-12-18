@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-
-    <title>Steve</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Rosie</title>
 </head>
 <body>
     <!-- -->
-    <header>
-    
+    <header>    
+        <div class="row">
+
+<!--
+In our case, the profile photo will act as our logo because that's how our 
+character Rosie is going to present herself. She's the brand.
+Now in Bootstrap 4, the first child following a row has to have a column class.
+So what we're just going to do is change our <div> here to an anchor tag so that
+it's a link, and that's going to connect us back to index.html.
+As well as the class of column, we're also going to give it a class of logo so that 
+we can access our image and style our logo.
+-->
+            <a class="col-md-4 logo" href="index.html">
+            
+            </a>
+            <div class="col-md-8"> <!--So that will split up our screen into one-third and two-thirds sections.-->
+                <!-- adding new bootstrap row inside it we need a colum row.-->
+
+                <div class="row bg-color-name-title "> <!--bg-color-name-title->will be background-color. copied in style.css-->
+                    <div class="col heading">
+                        <h1 class="name">Rosie Steven</h1>
+                        <h2 class="title">Full Stack Developer</h2>
+                    
+                    </div>
+                </div>
+              
+            </div>
+        </div>
     </header>
-    
+    <!-- -->
+        
+
     <!-- -->
     <section>
     
     </section>
+    <!-- -->
 
     <!-- -->
     <footer>
     
     </footer>
+    <!-- -->
 </body>
 </html>

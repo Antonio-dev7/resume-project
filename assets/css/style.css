@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/* -------------------------------------------colours */
+
+.bg-color-name-title {
+    background-color: #676767;
+}
+
+/* -------------------------------------------header */
+
+header {
+    margin: 0;
+}
+
+.heading {
+    margin-left: 50px;
+}
+
+.logo {
+    background: url("../images/rosie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* background size to cover the container that it's sitting inside.*/
+    min-height: 360px;/* We're going to give our image a minimum height of 360px.*/ 
+    transition: all .5s ease-in-out; /*animation for when the page or image loads.*/
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
