@@ -12,26 +12,17 @@
 <body>
     <!-- -->
     <header>
-        <!--row1-->    
+        <!--row1 no-gutters-->    
         <div class="row no-gutters">
 
-<!--
-In our case, the profile photo will act as our logo because that's how our 
-character Rosie is going to present herself. She's the brand.
-Now in Bootstrap 4, the first child following a row has to have a column class.
-So what we're just going to do is change our <div> here to an anchor tag so that
-it's a link, and that's going to connect us back to index.html.
-As well as the class of column, we're also going to give it a class of logo so that 
-we can access our image and style our logo.
--->
+
             <a class="col-md-4 logo" href="index.html">
             
             </a>
-<!--split up our screen into one-third and two-thirds sections.adding new bootstrap row inside it we need a colum row.-->
             <div class="col-md-8"> 
 
-                <!--row2--> 
-                <div class="row no-gutters bg-color-name-title "> <!--bg-color-name-title->will be background-color. copied in style.css-->
+                <!--row2 no-gutters--> 
+                <div class="row no-gutters bg-color-name-title "> 
                     <div class="col heading">
                         <h1 class="name">Rosie Steven</h1>
                         <h2 class="title">Full Stack Developer</h2>       
@@ -39,21 +30,22 @@ we can access our image and style our logo.
                 </div>
                 
                 <!--row3 no-gutters-->                                  <!--NAVIGATION-->
-                <div class="row no-gutters"> <!--We need to add another row underneath our column, inside it will another column as child.-->
+                <div class="row no-gutters"> 
                     <div class="col"> <!-- column child. un-ordered list.-->
-                        <ul id="nav" class="list-inline menucontainer"> <!-- new container class to close the gaps in the list.-->
-                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item">
-                                <a href="#"><span>Home</span></a>  
+                        <ul id="nav" class="list-inline menucontainer"> <!--new container class to close the gaps in the list.-->                     
+                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem"><!--then we add another class called (menuitem)better text and icons visually pleasing-->
+                            <!--using i element for font-awesome to style menu. after adding menu items./ then we add another class called (menuitem), the add in in style.-->
+                                <a href="#"><i class="fa fa-home" arial-hidden="true"></i><span>Home</span></a>
                             </li>
-                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
-                                <a href="#"><span>Resume</span></a>
+                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem"><!--then we add another class called (menuitem)better text and icons visually pleasing-->
+                                <a href="#"><i class="fa fa-graduation-cap" arial-hidden="true"></i><span>Resume</span></a>
                             </li>  
-                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
-                                <a href="#"><span>Contact</span></a>
+                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem"><!--then we add another class called (menuitem)better text and icons visually pleasing-->
+                                <a href="#"><i class="fa fa-comment-o" arial-hidden="true"></i><span>Contact</span></a>
                              </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
-                                <a href="#"><span>Download</span></a> 
-                            </li> <!-- adter this sort out the backgound color of the this list.-->
+                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem"><!--then we add another class called (menuitem)better text and icons visually pleasing-->
+                                <a href="#"><i class="fa fa-download" arial-hidden="true"></i><span>Download</span></a> 
+                            </li> <!-- after this sort out the backgound color of the this list.-->
                         
                         </ul>
                     </div>
