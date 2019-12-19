@@ -1,24 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/* -------------------------------------------colours */
+/*--------------------------------------------Colors*/
+
 .bg-color-name-title {
     background-color: #676767;
 }
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
+
 .ui-menu-color-resume {
-    background-color: #9b596b;
+    background-color: #9b59b6;
 }
+
 .ui-menu-color-contact {
     background-color: #3498db;
 }
+
 .ui-menu-color-download {
     background-color: #525252;
 }
 
-/* -------------------------------------------heading */
+/*--------------------------------------------Heading*/
+
 header {
     margin: 0;
 }
@@ -31,44 +36,45 @@ header {
     background: url("../images/rosie.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /* background size to cover the container that it's sitting inside.*/
-    min-height: 360px;/* We're going to give our image a minimum height of 360px.*/ 
-    transition: all .5s ease-in-out; /*animation for when the page or image loads.*/
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
 
 .name {
-    font-family:"Exo", sans-serif;
-    font-weight:100; 
-    font-size:46px;
+    font-family: "Exo", sans-serif;
+    font-weight: 100;
+    font-size: 46px;
     margin-top: 50px;
     color: #fff;
 }
 
 .title {
-    font-family:"Roboto", sans-serif;
-    font-weight:200; 
-    font-size:28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
     color: #fff;
 }
 
-/*This over-writes the the gaps between the margins on the list items to be a little closer 
-together.*/
-.list-inline-item:not(:last-child) { 
+.list-inline-item:not(:last-child) {
     margin: 0;
 }
-/*to solve create a container with the font-size of 0 so that the spaces are not displayed.
-Add the menucontainer class to our <ul>.*/
+
 .menucontainer {
-    font-size: 0; /*close up the gaps between our items.*/
+    font-size: 0;
 }
-/*We can override this by using our nav ID, */
+
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -76,29 +82,13 @@ Add the menucontainer class to our <ul>.*/
     text-align: center;
     padding: 0;
 }
-/* The anchor,or <a> tag, is our clickable area. So target that.
-It's a child of menuitem. set its width to 100%.make the entire 
-area of this <div> clickable.*/
+
 .menuitem a {
-    width: 100px;
-    text-decoration: 0;
+    width: 100%;
+    text-decoration: none;
     color: #fff;
     height: 120px;
 }
-/*
-We need to increase the font sizes themselves, so we're going to target the Font Awesome 
-icons next and eventually our span text. Targeting font-awesome icon.*/
-
-.menuitem a i {
-    padding-top: 22px;
-    display: block;
-    color: #fafafa;
-    font-size: 26px;
-}
-
-/*
-We need to increase the font sizes themselves, so we're going to target the Font Awesome 
-icons next and eventually our span text. Targeting font-awesome icon.*/
 
 .menuitem a i {
     padding-top: 22px;
@@ -116,5 +106,11 @@ icons next and eventually our span text. Targeting font-awesome icon.*/
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
+}
 
-} /* next is hover affect of each menu item.*/
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
