@@ -55,18 +55,16 @@ header {
     color: #fff;
 }
 
-/*This over-writes the the gaps between the margins on the list items to be a little closer together.*/
+/*This over-writes the the gaps between the margins on the list items to be a little closer 
+together.*/
 .list-inline-item:not(:last-child) { 
     margin: 0;
 }
-
-/*
-to solve create a container with the font-size of 0 so that the spaces are not displayed.Add the menucontainer class to our <ul>.
-*/
+/*to solve create a container with the font-size of 0 so that the spaces are not displayed.
+Add the menucontainer class to our <ul>.*/
 .menucontainer {
     font-size: 0; /*close up the gaps between our items.*/
 }
-
 /*We can override this by using our nav ID, */
 #nav li {
     font-size: 14px;
@@ -78,11 +76,45 @@ to solve create a container with the font-size of 0 so that the spaces are not d
     text-align: center;
     padding: 0;
 }
-/* The anchor,or <a> tag, is our clickable area. So target that.It's a child of menuitem. set its width to 100%.make the entire area of this <div> clickable.*/
+/* The anchor,or <a> tag, is our clickable area. So target that.
+It's a child of menuitem. set its width to 100%.make the entire 
+area of this <div> clickable.*/
 .menuitem a {
     width: 100px;
     text-decoration: 0;
     color: #fff;
     height: 120px;
 }
+/*
+We need to increase the font sizes themselves, so we're going to target the Font Awesome 
+icons next and eventually our span text. Targeting font-awesome icon.*/
 
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+
+/*
+We need to increase the font sizes themselves, so we're going to target the Font Awesome 
+icons next and eventually our span text. Targeting font-awesome icon.*/
+
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+} /* next is hover affect of each menu item.*/
