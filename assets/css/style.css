@@ -8,6 +8,10 @@
     background-color: #676767;
 }
 
+.bg-color-three-reasons { /* Begining of styling and building section. */
+    background-color: #fff; /* after this start styling other sections of the page*/
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -25,7 +29,7 @@
 }
 
 
-/* -------------------------------------Special paddings/margins/text */
+/* -------------------------------------/ GENERAL-CSS /Special paddings/margins/text */
 
 
 h1,
@@ -43,6 +47,23 @@ h4 {
 
 .inline-block {
     display: inline-block; /*It allows for a nice spacing of our content across the footer.*/
+}
+
+.row-table { /* styling and building section */
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;/* none prevents unslightly breaks on the column.*/
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 
